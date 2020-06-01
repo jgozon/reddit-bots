@@ -69,10 +69,10 @@ for comment in subreddit.stream.comments():
             print("Finished")
 
             # Post the results
-            comment.reply("Analysis for u/" + user + " completed. \n" + 
-                            "Total Occurances: " + str(titleCount + selfTextCount + commentCount) + "\n" +
-                            "u/" + user + " has said " + str(searchWord) + " " + str(titleCount) + " times in titles, " +
-                            str(selfTextCount) + " times in post texts, and " + commentCount + " times in comments.")
+            comment.reply("Analysis for u/" + user + " completed.  \n" + 
+                            "Total Occurances: " + str(titleCount + selfTextCount + commentCount) + "\n \n" +
+                            "u/" + user + " has said \'" + str(searchWord) + "\' " + str(titleCount) + " times in titles, " +
+                            str(selfTextCount) + " times in post texts, and " + str(commentCount) + " times in comments.")
         except:
             print("Error in comment formatting or other")
         
