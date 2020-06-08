@@ -1,0 +1,4 @@
+Purpose:
+This bot can be used to search the number of times a user has used a specified word in a comment, post title, or post description.
+
+To use the bot, make any reddit comment with the format "!searchHistory [reddit username] [word]". The reddit username should not contain 'u\'

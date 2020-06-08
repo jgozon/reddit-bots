@@ -1,0 +1,11 @@
+Purpose:
+This bot checks if external links in reddit comments are safe according to the Google Safe Browsing API.
+
+The bot will scan reddit comments for external links, then send a POST request with the target URL in the body of the
+request to "https://safebrowsing.googleapis.com/v4/threatMatches:find." The bot then checks the body of the response to determine 
+whether or not the link is safe.
+
+In addition to filling out the clientUsername, clientPassword, clientID, and clientSecret variables, you will also need to generate
+an API key to use the Google Safe Browsing API.
+
+To prevent spam, this bot is triggered with the keyword "!checkLink ", but can be removed if desired.
