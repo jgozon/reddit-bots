@@ -52,15 +52,10 @@ keyphrase = "!searchHistory "
 for comment in subreddit.stream.comments():
     if keyphrase in comment.body:
         try:
-            print("Called")
-
             # Extract the username and comment
             tempComment = comment.body.replace(keyphrase, '')
-            print(tempComment)
             user = tempComment.split(' ', 1)[0]
-            print(user)
             tempComment = tempComment.replace(user + ' ', '')
-            print(tempComment)
             searchWord = tempComment
             searchWord = searchWord.lower()
 

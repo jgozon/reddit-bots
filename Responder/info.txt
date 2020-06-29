@@ -1,0 +1,5 @@
+Purpose:
+This bot searches for a specified keyphrase and responds accordingly.
+
+When the bot is started, it will prompt the user to enter a keyphrase and response. It will then reply
+to all comments on Reddit which contain the specified keyphrase with the response that the user designated.
